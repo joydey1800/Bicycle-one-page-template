@@ -1,0 +1,135 @@
+
+    .social{
+
+      -ms-transition: transform 1s;
+      -webkit-transition: transform 1s; /* For Safari 3.1 to 6.0 */
+      transition: transform 1s;
+    }
+
+    .social:hover{
+      color:grey;
+      -ms-transform: scale(1.5,1.5); /* IE 9 */
+     -webkit-transform: scal(1.5,1.5); /* Safari */
+      transform: scale(1.5,1.5);
+    }
+
+    .carousel-item {
+
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+/* navbar icone */
+
+    .menuicon{
+      position: fixed;
+      top:20px;
+      right: 35px;
+      z-index: 2;
+      height:25px;
+      width:50px;
+    }
+    .menuicon:hover{
+      cursor: pointer;
+    }
+    .menuicon:hover .menuline{
+      width: 40px;
+    }
+    .menuline{
+      height: 3px;
+      width: 50px;
+      position: absolute;
+      background-color:#181818;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      transition: all .3s;
+    }
+    .menuline::before{
+      content: '';
+      height: 3px;
+      width: 40px;
+      position: absolute;
+      margin-top: 6px;
+      background-color: #181818;
+      transition: all .3s;
+    }
+    .menuicon:hover .menuline::before{
+      width: 50px;
+    }
+    .menuline::after{
+      content: '';
+      height: 3px;
+      width: 40px;
+      position: absolute;
+      margin-top: -6px;
+      background-color: #181818;
+      transition: all .3s;
+    }
+    .menuicon:hover .menuline::after{
+      width: 50px;
+    }
+    .mainmenu{
+      height:100vh;
+      width:300px;
+      z-index: 9;
+      background-color: #434b61;
+      /*Chrome,Safari*/
+    -webkit-clip-path: polygon(0 0,100% 0,0% 100%,0% 100%);
+      position: fixed;
+      top: 0;
+      left: -300px;
+      transition: all .5s ease-in-out;
+    }
+    ul{
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    ul li{
+      margin: .5rem;
+    }
+    ul li:hover{
+      cursor: pointer;
+    }
+    .line{
+      height:.1rem;
+      width: 80%;
+      background-color: white;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%);
+      transition: all .5s;
+    }
+    ul li:hover .line{
+      width: 120%;
+    }
+
+
+
+    a:link {
+  text-decoration: none;
+  color:white;
+}
+
+a:visited {
+  text-decoration: none;
+  color:white;
+}
+
+a:hover {
+  text-decoration: none;
+  color:white;
+}
+
+a:active {
+  text-decoration: none;
+  color:white;
+}
